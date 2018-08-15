@@ -8,13 +8,11 @@
 
 <ion-content padding>
 
-
 	<ion-card>
 		<ion-card-content>
-			there is an observable <code>messages$</code> that will get 5 new values every 1 second.<br>
-			the values won't show up in <code>ion-virtual-scroll</code> unless the change has been triggered by a resize or scroll event.<br>
-			<br>
-			try to scroll and the new entries should appear.
+			there is an observable <code>messages$</code> that will get 5 new values every 1 second.<br> the values won't show up
+			in <code>ion-virtual-scroll</code> unless the change has been triggered by a resize or scroll event.<br>
+			<br> try to scroll and the new entries should appear.
 		</ion-card-content>
 	</ion-card>
 
@@ -23,4 +21,11 @@
 			{{message.userName}}: {{message.text}}
 		</ion-item>
 	</ion-virtual-scroll>
+
+	<!-- <ion-virtual-scroll [items]="messages">
+		<ion-item *virtualItem="let message">
+			{{message.userName}}: {{message.text}}
+		</ion-item>
+	</ion-virtual-scroll> -->
+
 </ion-content>
